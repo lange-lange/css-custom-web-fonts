@@ -1,3 +1,7 @@
+
+/*! notice the subfolder 'fonts/'! */
+
+
 @font-face {
     font-family: 'Outward Block';
     src: url('fonts/outward-block-webfont.eot');
@@ -57,3 +61,17 @@
     font-style: normal;
 
 }
+
+
+
+@font-face {
+    font-family: 'ChaumontScript-Regular';
+    src: url('fonts/ChaumontScript-Regular.woff2') format('woff2'),
+         url('fonts/ChaumontScript-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
