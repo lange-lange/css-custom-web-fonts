@@ -1,35 +1,35 @@
 @font-face {
     font-family: 'Outward Block';
-    src: url('../fonts/outward-block-webfont.eot');
-    src: url('../fonts/outward-block-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/outward-block-webfont.woff2') format('woff2'),
-         url('../fonts/outward-block-webfont.woff') format('woff'),
-         url('../fonts/outward-block-webfont.ttf') format('truetype'),
-         url('../fonts/outward-block-webfont.svg#outwardblock') format('svg');
+    src: url('fonts/outward-block-webfont.eot');
+    src: url('fonts/outward-block-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/outward-block-webfont.woff2') format('woff2'),
+         url('fonts/outward-block-webfont.woff') format('woff'),
+         url('fonts/outward-block-webfont.ttf') format('truetype'),
+         url('fonts/outward-block-webfont.svg#outwardblock') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Outward Borders';
-    src: url('../fonts/outward-borders-webfont.eot');
-    src: url('../fonts/outward-borders-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/outward-borders-webfont.woff2') format('woff2'),
-         url('../fonts/outward-borders-webfont.woff') format('woff'),
-         url('../fonts/outward-borders-webfont.ttf') format('truetype'),
-         url('../fonts/outward-borders-webfont.svg#outwardborders') format('svg');
+    src: url('fonts/outward-borders-webfont.eot');
+    src: url('fonts/outward-borders-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/outward-borders-webfont.woff2') format('woff2'),
+         url('fonts/outward-borders-webfont.woff') format('woff'),
+         url('fonts/outward-borders-webfont.ttf') format('truetype'),
+         url('fonts/outward-borders-webfont.svg#outwardborders') format('svg');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Outward Round';
-    src: url('../fonts/outward-round-webfont.eot');
-    src: url('../fonts/outward-round-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/outward-round-webfont.woff2') format('woff2'),
-         url('../fonts/outward-round-webfont.woff') format('woff'),
-         url('../fonts/outward-round-webfont.ttf') format('truetype'),
-         url('../fonts/outward-round-webfont.svg#outwardround') format('svg');
+    src: url('fonts/outward-round-webfont.eot');
+    src: url('fonts/outward-round-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/outward-round-webfont.woff2') format('woff2'),
+         url('fonts/outward-round-webfont.woff') format('woff'),
+         url('fonts/outward-round-webfont.ttf') format('truetype'),
+         url('fonts/outward-round-webfont.svg#outwardround') format('svg');
     font-weight: normal;
     font-style: italic;
 }
