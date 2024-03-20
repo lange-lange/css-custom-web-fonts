@@ -42,23 +42,56 @@ p {
 }
 
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
- 
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
+a.two:link {
+	color: blue;
+	text-decoration: none;
 }
- 
-.fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
+
+
+a.two:visited {
+	color: blue;
+}
+
+a.two:hover {
+	color: white;
+	transition: 0.5s;
+	font-family: monospace;
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+
+.center {
+	text-align: center;
+	align-content: center;
+
+}
+
+
+
+button {
+	outline-color: deeppink;
+	color: white;
+	padding: 20px;
+	text-decoration: none;
+	border-radius: 10px;
+	font-family: monospace;
+	 outline: none;
+}
+
+
+button:hover {
+	background-color: deeppink;
+	color: white;
+	padding: 20px;
+	text-decoration: none;
+	border-radius: 30px;
+	transition: 1s;
+	font-family: monospace;
+	 outline: none;
+}
+
+*:focus {
+    outline: 0 !important;
 }
 
 
@@ -82,8 +115,11 @@ p {
 	</ol>
 
 	<p>Right click > Inspect to see how to integrate into your project.</p>
-	<button><a href="https://github.com/lange-lange/css-custom-web-fonts/tree/main">Download the full .zip of this Github Demo</button>
 
+<div class="center">	
+	<button><a class="two" href="https://github.com/lange-lange/css-custom-web-fonts/tree/main" target="_blank">Download the full .zip of this Github Demo</button>
+	</a>
+</div>
 <img src="images/name.png">
 
 </body>
