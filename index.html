@@ -41,12 +41,34 @@ p {
 
 }
 
+li {
+	font-family: monospace; 
+	font-size: 1.5vw; 
+	line-height: 1.25; 
+	padding-bottom: 6px;
+	width: 70vw;
+	margin: 0 auto;
+
+}
+
+
+a {
+	color: blue;
+}
+
+a:visited {
+	color: blue;
+}
+
+a:hover {
+	color: deeppink;
+	transition: 0.5s;
+}
 
 a.two:link {
 	color: blue;
 	text-decoration: none;
 }
-
 
 a.two:visited {
 	color: blue;
@@ -59,11 +81,9 @@ a.two:hover {
 	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
-
 .center {
 	text-align: center;
 	align-content: center;
-
 }
 
 
@@ -75,7 +95,9 @@ button {
 	text-decoration: none;
 	border-radius: 10px;
 	font-family: monospace;
-	 outline: none;
+	outline: none;
+	text-transform: uppercase;
+	margin-bottom: 2rem;
 }
 
 
@@ -87,7 +109,8 @@ button:hover {
 	border-radius: 30px;
 	transition: 1s;
 	font-family: monospace;
-	 outline: none;
+	outline: none;
+	text-transform: uppercase;
 }
 
 *:focus {
@@ -104,23 +127,29 @@ button:hover {
 <h1>CUSTOM WEB FONTS</h1>
 <h2>HOW TO LOAD CUSTOM WEB FONTS</h2>
 <h3>LOCALLY HOSTED</h3>
-	<p>A few different ways!</p>
+	<p>What is this? In this example, I'm using @font-face for custom web font files (woff), and declared in a 'fontname.css' file. Troubleshooting tips: Double check each font path for each individual font!
+</p>
 
 	<ol>
-<li>Custom Web Font > Download the woff files and .css</li>
-<li>If it's a TTF or OTF > then check license > if it's open-source and non-copyrighted, then use a webfont convertor to generate a web font package.</li>
+
+<li>Find a custom web font file by <a href="https://www.are.na/type-3/sourcing-type" target="_blank">sourcing from an indie type foundry</a></li>
+<li>Custom Web Font > Download the webfont 'woff' files (and .css file ideally), on the foundry website.</li>
+<li>If it's a TTF or OTF > then check license > if it's open-source and non-copyrighted, then use a <a href="https://www.fontsquirrel.com/tools/webfont-generator" target="_blank"> webfont convertor</a> to generate a web font package.</li>
 <li>Add your woff font files to a /fonts subfolder of your website project.</li>
-<li>Add a fontname.css file to your /css subfolder</li>
-<li>Ensure your font names are declared in your CSS and targeted in your styles</li>
+<li>Add @font-face to your css (internally or externally).</li>
+<li><i>or</i> Add a fontname.css file to your /css subfolder.</li>
+<li>Ensure your font names are declared in your CSS and targeted in your styles.</li>
+<li>Be patient!</li>
 	</ol>
 
-	<p>Right click > Inspect to see how to integrate into your project.</p>
+<p>Having troubles?</p>
+	<p>Right click on this page > select 'inspect' > Select the 'element icon' > see how to integrate into your project.</p>
 
 <div class="center">	
 	<button><a class="two" href="https://github.com/lange-lange/css-custom-web-fonts/tree/main" target="_blank">Download the full .zip of this Github Demo</button>
 	</a>
 </div>
-<img src="images/name.png">
+
 
 </body>
 </html>
