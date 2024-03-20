@@ -70,15 +70,36 @@ li, summary {
 
 /* LINKS */
 a {
-	color: blue;
+	color: deeppink;
+	text-underline-offset: 3px;
+	text-decoration-style: dotted;
 }
 
 a:visited {
-	color: blue;
+	color: deeppink;
+	text-underline-offset: 3px;
+	text-decoration-style: dotted;
 }
 
 a:hover {
+	color: blue;
+	transition: 0.5s;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+
+a.one {
 	color: deeppink;
+	text-decoration: none;
+}
+
+a.one:visited {
+	color: deeppink;
+}
+
+a.one:hover {
+	color: white;
 	transition: 0.5s;
 }
 
@@ -94,21 +115,23 @@ a.two:visited {
 a.two:hover {
 	color: white;
 	transition: 0.5s;
-	font-family: monospace;
+	font-family: ChaumontScript-Regular;
 	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
 /* BUTTONS ARE HELPFUL FOR SCREEN READERS!*/
 button {
+	background-color: yellow;
 	outline-color: deeppink;
 	color: white;
 	padding: 20px;
 	text-decoration: none;
 	border-radius: 10px;
-	font-family: monospace;
+	font-family: ChaumontScript-Regular;
+	font-size: 2rem;
 	outline: none;
 	text-transform: uppercase;
-	margin-bottom: 2rem;
+	margin: 1rem;
 }
 
 button:hover {
@@ -118,9 +141,22 @@ button:hover {
 	text-decoration: none;
 	border-radius: 30px;
 	transition: 1s;
-	font-family: monospace;
+	font-family: ChaumontScript-Regular;
 	outline: none;
-	text-transform: uppercase;
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+		margin: 1rem;
+}
+
+button.two:hover {
+	background-color: deeppink;
+	color: white;
+	padding: 20px;
+	text-decoration: none;
+	border-radius: 30px;
+	transition: 1s;
+	font-family: ChaumontScript-Regular;
+	outline: none;
+	margin: 1rem;
 }
 
 *:focus {
@@ -146,7 +182,7 @@ button:hover {
 <li>Custom Web Font > Download the webfont 'woff' files (and .css file ideally), on the foundry website.</li>
 <li>If it's a TTF or OTF > then check license > if it's open-source and non-copyrighted, then use a <a href="https://www.fontsquirrel.com/tools/webfont-generator" target="_blank"> Webfont Generator</a> to generate a web font package.</li>
 <li>Add your woff font files to a /fonts subfolder of your website project.</li>
-<li>Add @font-face to your css (internally or externally).</li>
+<li>Add <a href="https://css-tricks.com/snippets/css/using-font-face-in-css/" target="_blank">@font-face</a> to your css (internally or externally).</li>
 <li><i>or</i> Add a fontname.css file to your /css subfolder.</li>
 <li>Ensure your font names are declared in your CSS and targeted in your styles.</li>
 <li>Be patient!</li>
@@ -155,8 +191,9 @@ button:hover {
 <p>Having troubles? On Desktop > Right click on this page > select 'inspect' > Select the 'element icon' > see how to integrate into your project.</p>
 
 <div class="center">	
-	<button><a class="two" href="https://github.com/lange-lange/css-custom-web-fonts/tree/main" target="_blank">or Download the full .zip of this Github Demo</button>
+	<button><a class="one" href="https://github.com/lange-lange/css-custom-web-fonts/tree/main" target="_blank">Download the Github Demo .zip</button>
 	</a>
+	<button><a class="two" href="https://css-tricks.com/snippets/css/using-font-face-in-css/">?! CSS Font Face Documentation</a></button>
 </div>
 
 
