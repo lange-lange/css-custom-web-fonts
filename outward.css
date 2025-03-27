@@ -8,8 +8,7 @@
 
     @font-face {
         font-family: 'Pilowlava-Atome';
-        src: url('fonts/outward-block-webfont.eot?#iefix') format('embedded-opentype'),
-             url('fonts/Pilowlava-Atome.woff') format('woff2'),
+        src: url('fonts/Pilowlava-Atome.woff') format('woff2'),
              url('fonts/Pilowlava-Atome.woff2') format('woff');
         font-weight: normal;
         font-style: normal;
