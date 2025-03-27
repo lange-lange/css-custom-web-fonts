@@ -1,6 +1,20 @@
 
 /*! notice the subfolder 'fonts/'. note: these declaration blocks in an external .css file, came with the font download here: 
-    https://velvetyne.fr/fonts/outward/#:~:text=Outward%20is%20a%20display%20font,grey%20sought%20after%20by%20typographers. */
+    https://velvetyne.fr/fonts/outward/#:~:text=Outward%20is%20a%20display%20font,grey%20sought%20after%20by%20typographers. 
+
+    Pilowlava was designed by Anton Moglia, Jérémy Landes, with the contribution of Maksym Kobuzan. Distributed by velvetyne.fr.
+
+*/
+
+    @font-face {
+        font-family: 'Pilowlava-Atome';
+        src: url('fonts/outward-block-webfont.eot?#iefix') format('embedded-opentype'),
+             url('fonts/Pilowlava-Atome.woff') format('woff2'),
+             url('fonts/Pilowlava-Atome.woff2') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
 
 @font-face {
     font-family: 'Outward Block';
@@ -13,6 +27,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 
 @font-face {
     font-family: 'Outward Borders';
@@ -72,6 +87,8 @@
     font-style: normal;
 
 }
+
+
 
 
 
