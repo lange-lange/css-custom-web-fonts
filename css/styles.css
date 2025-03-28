@@ -14,8 +14,8 @@
 
     @font-face {
         font-family: 'Pilowlava-Atome';
-        src: url('css/fonts/Pilowlava-Atome.woff') format('woff'),
-             url('css/fonts/Pilowlava-Atome.woff2') format('woff2');
+        src: url('fonts/Pilowlava-Atome.woff') format('woff'),
+             url('fonts/Pilowlava-Atome.woff2') format('woff2');
         font-weight: normal;
         font-style: normal;
     }
