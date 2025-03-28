@@ -1,196 +1,31 @@
 <!DOCTYPE html>
-	<html lang="en">
-	<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Web Fonts — Demo</title>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Web Fonts — Demo</title>
 
-	<!-- LINKING TO A FONT.CSS STYLESHEET, SOMETIMES THEY ARE PROVIDED WITH THE FONT LICENCE. OTHER TIMES YOU CAN GENERATE A FONT FILE PACKAGE USING https://www.fontsquirrel.com/tools/webfont-generator (BE SURE TO CHECK THE LICENCE IF ALLOWED THOUGH, AND PROPERLY LICENCE WEB FONTS FIRST) -->
+<!-- LINKING TO A STYLES.CSS STYLESHEET, SOMETIMES THEY ARE PROVIDED WITH THE FONT LICENCE. OTHER TIMES YOU CAN GENERATE A FONT FILE PACKAGE USING https://www.fontsquirrel.com/tools/webfont-generator (BE SURE TO CHECK THE LICENCE IF ALLOWED THOUGH, AND PROPERLY LICENCE WEB FONTS FIRST) -->
 
-	<link rel="stylesheet" href="styles.css">
-
-
-<style>
-
-/* LAYOUT STUFF */
-
-.center {
-	text-align: center;
-	align-content: center;
-}
-
-/* TYPOGRAPHY */
-
-
-
-
-@media (min-width: 601px) {
-
-	h1 { 
-	font-family: "Pilowlava-Atome"; 
-	font-size: 800%; 
-	text-align: center; 
-	margin-top: 10%;
-	line-height: 0.8;
-}
-}
-
-h2 { 
-	font-family: "Outward Borders"; 
-	font-size: 8rem; 
-	line-height: 0.8;
-	text-align: center; 
-	margin-bottom: 2rem;
-}
-
-h3 { 
-	font-family: "ChaumontScript-Regular"; 
-	font-size: 6rem; 
-	letter-spacing: 0.025em; 
-	text-align: center; 
-}
-
-p {
-	font-family: "alex_brushregular"; 
-	font-size: 2rem; 
-	line-height: 1; 
-	text-align: center; 
-	width: 70vw;
-	margin: 0 auto;
-	margin-top: 2rem;
-}
-
-li, summary {
-	font-family: monospace; 
-	font-size: 1.25rem; 
-	line-height: 1.25; 
-	padding-bottom: 6px;
-	width: 70vw;
-	margin: 0 auto;
-
-}
-
-
-
-
-
-
-
-/* LINKS */
-a {
-	color: deeppink;
-	text-underline-offset: 3px;
-	text-decoration-style: dotted;
-}
-
-a:visited {
-	color: deeppink;
-	text-underline-offset: 3px;
-	text-decoration-style: dotted;
-}
-
-a:hover {
-	color: blue;
-	transition: 0.5s;
-	text-decoration: underline;
-	text-underline-offset: 3px;
-}
-
-
-a.one {
-	color: deeppink;
-	text-decoration: none;
-}
-
-a.one:visited {
-	color: deeppink;
-}
-
-a.one:hover {
-	color: white;
-	transition: 0.5s;
-}
-
-a.two:link {
-	color: blue;
-	text-decoration: none;
-}
-
-a.two:visited {
-	color: blue;
-}
-
-a.two:hover {
-	color: white;
-	transition: 0.5s;
-	font-family: ChaumontScript-Regular;
-	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-}
-
-/* BUTTONS ARE HELPFUL FOR SCREEN READERS!*/
-button {
-	background-color: yellow;
-	outline-color: deeppink;
-	color: white;
-	padding: 20px;
-	text-decoration: none;
-	border-radius: 10px;
-	font-family: ChaumontScript-Regular;
-	font-size: 2rem;
-	outline: none;
-	text-transform: uppercase;
-	margin: 1rem;
-}
-
-button:hover {
-	background-color: deeppink;
-	color: white;
-	padding: 20px;
-	text-decoration: none;
-	border-radius: 30px;
-	transition: 1s;
-	font-family: ChaumontScript-Regular;
-	outline: none;
-	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-		margin: 1rem;
-}
-
-button.two:hover {
-	background-color: deeppink;
-	color: white;
-	padding: 20px;
-	text-decoration: none;
-	border-radius: 30px;
-	transition: 1s;
-	font-family: ChaumontScript-Regular;
-	outline: none;
-	margin: 1rem;
-}
-
-*:focus {
-    outline: 0 !important;
-}
-
-</style>
+<link rel="stylesheet" href="css/styles.css">
 </head>
-
-
 
 <!-- this is how you write a comment describing your code in HTML. the body section is for all content that is visible. Keep it here! Semantic structure is just as important as syntax. -->
 <body>
 
+<section>
 <h1>CUSTOM WEB FONTS</h1>
 	<p>Before you start, open this page in Firefox, Chrome, <i>and</i> Safari.</p>
-
-<div class="center">	
+	<div class="center">	
 	<button><a class="one" href="https://github.com/lange-lange/css-custom-web-fonts/tree/main" target="_blank">Can I Use!?</a></button>
+	</div>
+</section>
 
-</div>
+<section>
 <h2>HOW TO LOAD CUSTOM WEB FONTS THAT ARE LOCALLY HOSTED</h2>
-
 	<p>What is this? In this example, I'm using @font-face for custom web font files (woff), and declared in a 'fontname.css' file. Troubleshooting tips: Double check each font path for each individual font!
-</p>
+	</p>
 
 <ol>
 		<summary><b>STEPS</b></summary>
@@ -203,15 +38,17 @@ button.two:hover {
 		<li>Ensure your font names are declared in your CSS and targeted in your styles.</li>
 		<li>Be patient!</li>
 </ol>
+</section>
 
+<footer>
 <p>Having troubles? On Desktop > Right click on this page > select 'inspect' > Select the 'element icon' > see how to integrate into your project.</p>
-
 <div class="center">	
 	<button><a class="one" href="https://github.com/lange-lange/css-custom-web-fonts/tree/main" target="_blank">Download the Github Demo .zip</button>
 	</a>
 
 	<button><a class="two" href="https://css-tricks.com/snippets/css/using-font-face-in-css/">?! CSS Font Face Documentation</a></button>
 </div>
+</footer>
 
 </body>
 </html>

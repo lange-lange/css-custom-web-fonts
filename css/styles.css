@@ -1,29 +1,31 @@
 
-/*! notice the subfolder 'fonts/'. note: these declaration blocks in an external .css file, came with the font download here: 
-    https://velvetyne.fr/fonts/outward/#:~:text=Outward%20is%20a%20display%20font,grey%20sought%20after%20by%20typographers. 
+/*! 1. ~ I M P O R T A N T ~ A D D ~ W E B  F O N T S ~ T O ~ Y O U R ~ /css S U B F O L D E R ~ T O ~ project-name/css/fonts
+    Font files are best suited in the subfolder /css. this way the relative file paths below, link accurately! 
+    This will help when deploying to a hosted server.
 
-    Pilowlava was designed by Anton Moglia, Jérémy Landes, with the contribution of Maksym Kobuzan. Distributed by velvetyne.fr.
+    Using a variety of font files from type families designed by type designers (mostly indie) 
+    can help average, generic, and mediocre work be a bit more visually compelling.
+    need some heat? check out my are.na channel over at: https://www.are.na/type-3/sourcing-type
 
-*/
+    2. ~ A D D  A  C R E D I T  F O R  T H E  T Y P E  D E S I G N E R ~
+    Add credits when a type foundry includes instructions on how to give credit, where credit is due. 
+
+    For example: "Pilowlava was designed by Anton Moglia, Jérémy Landes, with the contribution of Maksym Kobuzan. Distributed by velvetyne.fr." */
 
     @font-face {
         font-family: 'Pilowlava-Atome';
-        src: url('/fonts/Pilowlava-Atome.woff') format('woff2'),
-             url('/fonts/Pilowlava-Atome.woff2') format('woff');
+        src: url('css/fonts/Pilowlava-Atome.woff') format('woff2'),
+             url('css/fonts/Pilowlava-Atome.woff2') format('woff');
         font-weight: normal;
         font-style: normal;
     }
-    
+   
+/*! 3. ~ I M P O R T A N T ~ A D D ~ F O N T S ~ S U B - F O L D E R ~ T O ~ Y O U R ~ F I L E  P A T H S ~
+    Font files are best suited in the subfolder /css. this way the relative file paths below, link accurately! 
+    This will help when deploying to a hosted server.
 
-
-
-
-
-
-
-
-
-    
+    Notice the subfolder 'fonts/'. note: these declaration blocks in an external .css file, came with the font download here: 
+    https://velvetyne.fr/fonts/outward/#:~:text=Outward%20is%20a%20display%20font,grey%20sought%20after%20by%20typographers.  */
 
 @font-face {
     font-family: 'Outward Block';
@@ -98,6 +100,170 @@
 }
 
 
+/* LAYOUT STUFF */
+
+.center {
+	text-align: center;
+	align-content: center;
+}
+
+/* TYPOGRAPHY */
+
+
+@media (max-width: 600px) {
+
+	h1 { 
+	font-family: "Pilowlava-Atome"; 
+	font-size: 200%; 
+	text-align: center; 
+	margin-top: 10%;
+	line-height: 0.8;
+}
+}
+
+@media (min-width: 601px) {
+
+	h1 { 
+	font-family: "Pilowlava-Atome"; 
+	font-size: 800%; 
+	text-align: center; 
+	margin-top: 10%;
+	line-height: 0.8;
+}
+}
+
+h2 { 
+	font-family: "Outward Borders"; 
+	font-size: 8rem; 
+	line-height: 0.8;
+	text-align: center; 
+	margin-bottom: 2rem;
+}
+
+h3 { 
+	font-family: "ChaumontScript-Regular"; 
+	font-size: 6rem; 
+	letter-spacing: 0.025em; 
+	text-align: center; 
+}
+
+p {
+	font-family: "alex_brushregular"; 
+	font-size: 2rem; 
+	line-height: 1; 
+	text-align: center; 
+	width: 70vw;
+	margin: 0 auto;
+	margin-top: 2rem;
+}
+
+li, summary {
+	font-family: monospace; 
+	font-size: 1.25rem; 
+	line-height: 1.25; 
+	padding-bottom: 6px;
+	width: 70vw;
+	margin: 0 auto;
+
+}
 
 
 
+
+
+
+
+/* LINKS */
+a {
+	color: deeppink;
+	text-underline-offset: 3px;
+	text-decoration-style: dotted;
+}
+
+a:visited {
+	color: deeppink;
+	text-underline-offset: 3px;
+	text-decoration-style: dotted;
+}
+
+a:hover {
+	color: blue;
+	transition: 0.5s;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+
+a.one {
+	color: deeppink;
+	text-decoration: none;
+}
+
+a.one:visited {
+	color: deeppink;
+}
+
+a.one:hover {
+	color: white;
+	transition: 0.5s;
+}
+
+a.two:link {
+	color: blue;
+	text-decoration: none;
+}
+
+a.two:visited {
+	color: blue;
+}
+
+a.two:hover {
+	color: white;
+	transition: 0.5s;
+	font-family: ChaumontScript-Regular;
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+/* BUTTONS ARE HELPFUL FOR SCREEN READERS!*/
+button {
+	background-color: yellow;
+	outline-color: deeppink;
+	color: white;
+	padding: 20px;
+	text-decoration: none;
+	border-radius: 10px;
+	font-family: ChaumontScript-Regular;
+	font-size: 2rem;
+	outline: none;
+	text-transform: uppercase;
+	margin: 1rem;
+}
+
+button:hover {
+	background-color: deeppink;
+	color: white;
+	padding: 20px;
+	text-decoration: none;
+	border-radius: 30px;
+	transition: 1s;
+	font-family: ChaumontScript-Regular;
+	outline: none;
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+		margin: 1rem;
+}
+
+button.two:hover {
+	background-color: deeppink;
+	color: white;
+	padding: 20px;
+	text-decoration: none;
+	border-radius: 30px;
+	transition: 1s;
+	font-family: ChaumontScript-Regular;
+	outline: none;
+	margin: 1rem;
+}
+
+*:focus {
+    outline: 0 !important;
+}
